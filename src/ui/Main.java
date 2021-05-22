@@ -14,12 +14,12 @@ public class Main {
     private static FlagThread thread3;
 
     public static void main(String[] args) throws InterruptedException {
-        flag1 = new Flag(47, " ");
+        flag1 = new Flag(43, " ");
         flag2 = new Flag(44, " ");
         flag3 = new Flag(41, " ");
-        thread1 = new FlagThread(flag1, 3, 1, 8);
-        thread2 = new FlagThread(flag2, 3, 4, 10);
-        thread3 = new FlagThread(flag3, 3, 7, 12);
+        thread1 = new FlagThread(flag1, 4, 1, 3);
+        thread2 = new FlagThread(flag2, 2, 5, 10);
+        thread3 = new FlagThread(flag3, 2, 7, 12);
 
         System.out.print(ESC+"2J");
         thread1.start();
